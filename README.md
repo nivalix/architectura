@@ -18,7 +18,6 @@ Runs them through an AI pipeline that consist of three stages:
 |---|---|---|
 | Inpainting | Stable Diffusion Inpainting | Generate and combine design into location |
 | Alignment Check | CLIP (ViT-B/32) | Measure how well the output matches the prompt |
-| Realism Check | FID | Measure how realistic is the final image |
 
 ---
 
@@ -34,7 +33,6 @@ Runs them through an AI pipeline that consist of three stages:
 ## Tech Stack
 - [Stable Diffusion Inpainting](https://huggingface.co/runwayml/stable-diffusion-inpainting)
 - [OpenAI CLIP (ViT-B/32)](https://github.com/openai/CLIP)
-- [torch-fidelity](https://github.com/toshas/torch-fidelity) for FID computation
 - [Gradio](https://gradio.app/) for interactive web UI
 - PyTorch
 
@@ -69,7 +67,7 @@ Changes made after academic submission to bring the code closer to production st
 - Replaced URL-based image input with direct file upload (removes hotlinking issues)
 - Removed unused `StableDiffusionPipeline` and dead code
 - Removed unused imports (`requests`, `BytesIO`, `torchvision.transforms`)
-- Added FID error handling for single-image evaluation
+- Removed FID score as it is considered a misapplied metric
 - Restructured with proper docstrings, section comments, and clean function signatures
 - Added `requirements.txt` and `.gitignore`
 
