@@ -3,7 +3,7 @@
 
 A proof-of-concept application that uses generative AI to produce architectural design concepts combined with real-world location images, evaluated using quantitative image quality metrics.
 
-Originally built as a group project at BINUS University, then cleaned and improved for portofolio purposes.
+Originally built as a group project at BINUS University, then cleaned and improved for portfolio purposes.
 
 ---
 
@@ -74,4 +74,5 @@ Changes made after academic submission to bring the code closer to production st
 ---
 
 ## Team
-Built by a team of 3 CS students at BINUS University.
+Built by a team of 3 CS students at BINUS University. Submitted as a PKM-KC proposal, scoring 95/100.
+
